@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "Transparency Supervisor",
+    "version": "1.0.1",
+  
+    
+    
+    "description": "Protect your privacy",
+    "permissions":["webRequest" , "webRequestBlocking","<all_urls>"],
+    
+    "background":{
+  
+      "scripts":["background.js"]
+    },
+    "icons":{
+        "16": "icons/16x16.png",
+        "64": "icons/64x64.png",
+        "128": "icons/128x128.png"
+    },
+
+    "browser_action":{
+      "default_popup": "popup.html"  
+    }
+  
+  }

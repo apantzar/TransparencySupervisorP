@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html onmouseover="">
+    <head>
+        <title>Transparency Supervisor</title>
+        <script src="jquery-3.1.0.min.js"></script>
+        <script src="background.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<script src="popup.js"></script>-->
+    </head>
+    <body onmouseover="displayCounter()">
+      
+
+       <h1>Transparency Supervisor<br><p style="text-align: center; color:green;">You are safe!</p></h1>
+
+       <p id="rcorners1">Don't worry we prevent websites sending<br> data to known tracker domains. <br> </p>
+
+       <script>
+           var count = (function(){
+               var counter = 0;
+               
+
+               return function(){return counter += 1}
+           })();
+
+
+
+           function displayCounter(){
+               document.getElementById("test").innerHTML = count();
+           }
+       </script>
+
+       <div style="text-align: center;">
+    
+        <div class="circle"></div>
+        <div class="circle-small"><p></p></div>
+        <div class="circle-big"></div>
+        <div class="circle-inner-inner"></div>
+        <div class="circle-inner"><h1 id="test1" ><br></h1>&#9873;</h1></div>  
+    
+        </div>
+
+       
+        
+    </body>
+
+
+
+
+    <script src="background.js"> </script>
+
+
+</html>

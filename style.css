@@ -1,0 +1,238 @@
+body{
+    background-size: auto;
+    background-color:rgb(218, 216, 216);
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+
+}
+
+
+h1{
+    color: rgb(18, 22, 18);
+    text-align: center;
+    text-shadow: gray;
+    size: 60px;
+}
+
+
+p{
+    font-family: sans-serif;
+    text-align:start;
+    font-size:large;
+}
+
+
+
+
+#rcorners1 {
+    align-self: flex-end;
+    border-radius: 0px;
+    background: #c4c4c4;
+    padding: 20px; 
+    width: 400px;
+    height: 50px;  
+  }
+
+
+
+  .dot {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+  .dotIn {
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(167, 31, 31);
+    border-radius: 50%;
+    display:inline-flex;
+  }
+
+
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(235, 234, 234);
+}
+
+.circle{
+    width: 180px;
+    height: 180px;
+    border: 10px inset rgb(107, 50, 139);
+    display: block;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -80px;
+    border-radius: 200px;
+    -moz-animation: rotate 5s infinitelinear;
+    -webkit-animation: rotate 5s infinite linear;
+    animation: rotate 5s infinite linear;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.circle-small{
+    width: 150px;
+    height: 150px;
+    border: 6px outset rgb(211, 13, 218);
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -81px;
+    margin-top: -62px;
+    border-radius: 156px;
+    -moz-animation: rotate-rev 3s infinite linear;
+    -webkit-animation: rotate-rev 3s infinite linear;
+    animation: rotate-rev 3s infinite linear;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.circle-big{
+    width: 210px;
+    height: 210px;
+    border: 4px dotted rgb(242, 133, 218);
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -109px;
+    margin-top: -89px;
+    border-radius: 214px;
+    -moz-animation: rotate-rev 10s infinite linear;
+    -webkit-animation: rotate-rev 10s infinite linear;
+    animation: rotate-rev 10s infinite linear;
+}
+
+.circle-inner{
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(205, 155, 247);
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -20px;
+    border-radius: 80px;
+    -moz-animation: pulse 1.5s infinite ease-in;
+    -webkit-animation: pulse 1.5s infinite ease-in;
+    animation: pulse 1.5s infinite ease-in;
+    opacity: 1;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.circle-inner-inner{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(107, 31, 91);
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -30px;
+    border-radius: 100px;
+    -moz-animation: pulse 1.5s infinite ease-in;
+    -webkit-animation: pulse 1.5s infinite ease-in;
+    animation: pulse 1.5s infinite ease-in;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+
+/*==============ANIMATIONS=================*/
+
+/*==============ROTATE=====================*/
+
+@-moz-keyframes rotate{
+  0% {-moz-transform: rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes rotate{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+/*==============ROTATE-REV=================*/
+
+@-moz-keyframes rotate-rev{
+	0% {-moz-transform: rotate(0deg);}
+	100% {-moz-transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes rotate-rev{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(-360deg);}
+}
+
+@keyframes rotate-rev{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+/*==============PULSE======================*/
+
+@-moz-keyframes pulse{
+	0% {
+        -moz-transform: scale(0.1);
+        opacity: 0.2;
+    }
+	50% {
+        -moz-transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        -moz-transform: scale(0.1);
+        opacity: 0.2;
+    }
+}
+
+@-webkit-keyframes pulse{
+	0% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.2;
+    }
+	50% {
+        -webkit-transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.2;
+    }
+}
+
+@keyframes pulse{
+	0% {
+        transform: scale(0.1);
+        opacity: 0.2;
+    }
+	50% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+  100% {
+        transform: scale(0.1);
+        opacity: 0.2;
+    }
+}
